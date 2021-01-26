@@ -999,3 +999,105 @@ Session ID: a4e8813a344f863ea9be5ce2c93d0a19
 190619 19:56:09.780│ Création drivers réussies
 250121 22:20:15.475? Je vais créer les drivers
 250121 22:33:08.865? Je vais créer les drivers
+250121 22:33:50.042? Création drivers réussies
+250121 22:33:56.184? Collecte des liens de tournoi
+250121 22:33:57.050? Collecte des liens de tournoi après chargement page liens tennis
+250121 22:34:07.798?    Collecte du 1000eme tournoi
+250121 22:34:14.426?    Collecte du 1100eme tournoi
+250121 22:34:33.766?    Collecte du 1200eme tournoi
+250121 22:34:57.042?    Collecte du 1300eme tournoi
+250121 22:35:20.793?    Collecte du 1400eme tournoi
+250121 22:35:44.439?    Collecte du 1500eme tournoi
+250121 22:36:07.544?    Collecte du 1600eme tournoi
+250121 22:36:31.590?    Collecte du 1700eme tournoi
+250121 22:36:55.549?    Collecte du 1800eme tournoi
+250121 22:37:20.454?    Collecte du 1900eme tournoi
+250121 22:38:04.754?    Collecte du 2000eme tournoi
+250121 22:38:49.927?    Collecte du 2100eme tournoi
+250121 22:39:34.830?    Collecte du 2200eme tournoi
+250121 22:40:26.488?    Collecte du 2300eme tournoi
+250121 22:41:17.918?    Collecte du 2400eme tournoi
+250121 22:42:06.060?    Collecte du 2500eme tournoi
+250121 22:42:52.792?    Collecte du 2600eme tournoi
+250121 22:43:36.981?    Collecte du 2700eme tournoi
+250121 22:44:23.117?    Collecte du 2800eme tournoi
+250121 22:45:07.168?    Collecte du 2900eme tournoi
+250121 22:45:50.917?    Collecte du 3000eme tournoi
+250121 22:46:34.870?    Collecte du 3100eme tournoi
+250121 22:47:18.691?    Collecte du 3200eme tournoi
+250121 22:48:04.773?    Collecte du 3300eme tournoi
+250121 22:49:01.024?    Collecte du 3400eme tournoi
+250121 22:49:45.454?    Collecte du 3500eme tournoi
+250121 22:50:31.679?    Collecte du 3600eme tournoi
+250121 22:51:22.384?    Collecte du 3700eme tournoi
+250121 22:52:10.813?    Collecte du 3800eme tournoi
+250121 22:53:08.471?    Collecte du 3900eme tournoi
+250121 22:53:57.881?    Collecte du 4000eme tournoi
+250121 22:54:48.571?    Collecte du 4100eme tournoi
+250121 22:55:35.694?    Collecte du 4200eme tournoi
+250121 22:56:23.172?    Collecte du 4300eme tournoi
+250121 22:57:09.449?    Collecte du 4400eme tournoi
+250121 23:22:59.844? ┌─── ──────────────────────────────────────────────────────────────────────────────────
+250121 23:22:59.844? Tournoi
+250121 23:22:59.844?     Annee
+250121 23:22:59.844?         Page
+250121 23:22:59.851?                 OU
+250121 23:22:59.851?                     org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: #col-content > h1 (tried for 40 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at odds.portal.OddsPortal.attendre(OddsPortal.java:1229)
+	at odds.portal.OddsPortal.allerPuisAttendre(OddsPortal.java:1259)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:680)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:603)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:529)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1150)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1144)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#col-content > h1"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '192.168.43.161', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Ouba\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0292ed1ca72b24a8a6509f292c7d718f
+*** Element info: {Using=css selector, value=#col-content > h1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 7 more
+
+250121 23:22:59.852? https://www.oddsportal.com/tennis/argentina/atp-buenos-aires/horansky-filip-londero-juan-ignacio-0E1T6gO7/
+250121 23:22:59.852? └─── ──────────────────────────────────────────────────────────────────────────────────
+260121 01:49:44.256? ┌─── ──────────────────────────────────────────────────────────────────────────────────
+260121 01:49:44.256? Tournoi
+260121 01:49:44.256?     Annee
+260121 01:49:44.257?         Page
+260121 01:49:44.257?                 HomeAway
+260121 01:49:44.257?                     java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.lang.Float.parseFloat(Float.java:451)
+	at odds.portal.OddsPortal.prendreValeurReelle(OddsPortal.java:1036)
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:945)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:720)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:589)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:529)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1150)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1144)
+
+260121 01:49:44.257? https://www.oddsportal.com/tennis/australia/atp-australian-open-2020/ito-tatsuma-djokovic-novak-SUplTVOB/
+260121 01:49:44.257? └─── ──────────────────────────────────────────────────────────────────────────────────
