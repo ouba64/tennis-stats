@@ -1,0 +1,35 @@
+
+Réservations
+.depth0 > li:nth-child(8) > a:nth-child(1)
+li.active > a:nth-child(1)   | #js-main-nav > li:nth-child(4) > a:nth-child(1)
+
+Checkbox pour "Message uniquement en attente"
+#pending
+.js-pending-checkbox
+
+Type de date
+#type-dropdown
+#type
+
+
+Table des résultat de recherches (reservations)
+
+.table > tbody:nth-child(2)
+
+
+Nom dans tableau
+table.table-striped:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > strong:nth-child(1)
+
+
+Prix
+
+div.guest_details:nth-child(3) > p:nth-child(4)
+
+
+Nuitée
+table.table-striped:nth-child(1) > tbody:nth-child(1) > tr:nth-child(12) > td:nth-child(2)=#wrap > div > div.row-fluid > section > div.span6 > div:nth-child(1) > table > tbody > tr:nth-child(12) > td:nth-child(2)
+.nested > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)
+
+
+#dp1485162339558
+#stay_from

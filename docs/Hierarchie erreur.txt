@@ -1,0 +1,47 @@
+Tournoi
+	Année
+		Page
+			Match
+				Commun (Adversaires, heure du match, résultats)
+				Home/Away
+				AH
+				OU
+			
+
+Souvent il n y a pas de AH
+Dans les onglets AH ou OU, quand il y a moins de deux lignes, elles sont par défaut developpées
+- 1 games : ouvert
+- 2 games : ouvert
+- 3 games : ouvert
+- 2 games, 1 set, fermé
+- 4 games : fermé
+- 6 games : fermé
+Permettre de bufferiser au moins 10 lignes avant d'enregistrer
+a 1 ouvre
+a 10 ferme
+a 11 ouvre
+a 20 ferme
+a 21 ouvre
+a 30 ferme
+
+2 ouvre
+3
+4 ferme
+5 ouvre
+6 
+7 ferme
+8 ouvre
+9
+10 ferme
+11 ouvre
+
+
+
+Voir si les pages fonctionnent
+
+			
+				
+Sauvegarder l'étape d'erreur de match AH et OU
+Changer tab
+Reparer les retired | canceled
+Bug du write (le fichier a 0 octets)

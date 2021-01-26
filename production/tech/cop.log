@@ -1,0 +1,1001 @@
+150619 16:45:15.079│ Je vais créer les drivers
+150619 16:45:19.429│ Création drivers réussies
+150619 16:52:39.090│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 16:52:39.090│ Tournoi
+150619 16:52:39.090│     Annee
+150619 16:52:39.090│         Page
+150619 16:52:39.090│                 OU
+150619 16:52:39.091│                     org.openqa.selenium.WebDriverException: java.io.InterruptedIOException: thread interrupted
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.97', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1348)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1336)
+	at org.openqa.selenium.support.ui.ExpectedConditions$46.apply(ExpectedConditions.java:1332)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at odds.portal.OddsPortal.cliquerPuisAttendreDisparition(OddsPortal.java:1225)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:874)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+Caused by: java.io.InterruptedIOException: thread interrupted
+	at okio.Timeout.throwIfReached(Timeout.java:145)
+	at okio.Okio$1.write(Okio.java:76)
+	at okio.AsyncTimeout$1.write(AsyncTimeout.java:180)
+	at okio.RealBufferedSink.flush(RealBufferedSink.java:224)
+	at okhttp3.internal.http1.Http1Codec.finishRequest(Http1Codec.java:166)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:84)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory$1$$Lambda$16/1460547864.intercept(Unknown Source)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	... 15 more
+
+150619 16:52:39.092│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires/sonego-lorenzo-giannessi-alessandro-OxnLy0hJ/
+150619 16:52:39.093│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 16:52:40.370│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 16:52:40.370│ Tournoi
+150619 16:52:40.370│     Annee
+150619 16:52:40.370│         Page
+150619 16:52:40.371│                 OU
+150619 16:52:40.371│                     org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.97', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55029}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: a0ac687be14ac5105de53bcb6d2f1c9b
+*** Element info: {Using=css selector, value=#col-content > h1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at odds.portal.OddsPortal.attendre(OddsPortal.java:1200)
+	at odds.portal.OddsPortal.allerPuisAttendre(OddsPortal.java:1230)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:662)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 16:52:40.371│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires/sonego-lorenzo-giannessi-alessandro-OxnLy0hJ/
+150619 16:52:40.371│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:25:24.238│ Je vais créer les drivers
+150619 21:25:28.404│ Création drivers réussies
+150619 21:27:51.102│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:27:51.102│ Tournoi
+150619 21:27:51.103│     Annee
+150619 21:27:51.103│         Page
+150619 21:27:51.103│                 OU
+150619 21:27:51.103│                     org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: #col-content > h1 (tried for 40 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at odds.portal.OddsPortal.attendre(OddsPortal.java:1200)
+	at odds.portal.OddsPortal.allerPuisAttendre(OddsPortal.java:1230)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:662)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#col-content > h1"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=#col-content > h1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 7 more
+
+150619 21:27:51.105│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires/schwartzman-diego-sebastian-cecchinato-marco-OroJuYu5/
+150619 21:27:51.105│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:51:52.334│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:51:52.334│ Tournoi
+150619 21:51:52.335│     Annee
+150619 21:51:52.335│         Page
+150619 21:51:52.335│                 OU
+150619 21:51:52.335│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:51:52.336│ https://www.oddsportal.com/tennis/argentina/atp-cordoba-doubles/bagnis-facundo-duran-guillermo-demoliner-marcelo-nielsen-frederik-ji0gtRKi/
+150619 21:51:52.336│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:52:33.470│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:52:33.470│ Tournoi
+150619 21:52:33.470│     Annee
+150619 21:52:33.470│         Page
+150619 21:52:33.470│                 OU
+150619 21:52:33.470│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:52:33.471│ https://www.oddsportal.com/tennis/argentina/atp-cordoba-doubles/bedene-aljaz-marterer-maximilian-pella-guido-podlipnik-castillo-hans-C01ks75o/
+150619 21:52:33.472│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:54:20.211│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:54:20.212│ Tournoi
+150619 21:54:20.212│     Annee
+150619 21:54:20.212│         Page
+150619 21:54:20.212│                 OU
+150619 21:54:20.212│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:54:20.212│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles/munar-jaume-ramos-vinolas-albert-bedene-aljaz-marrero-santana-david-tQAb5typ/
+150619 21:54:20.214│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:54:36.309│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:54:36.309│ Tournoi
+150619 21:54:36.309│     Annee
+150619 21:54:36.309│         Page
+150619 21:54:36.310│                 OU
+150619 21:54:36.310│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:54:36.310│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles/schwartzman-diego-sebastian-thiem-dominic-cuevas-pablo-lopez-marc-jehkS3rc/
+150619 21:54:36.312│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:55:32.230│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:55:32.230│ Tournoi
+150619 21:55:32.230│     Annee
+150619 21:55:32.230│         Page
+150619 21:55:32.230│                 AH
+150619 21:55:32.233│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:55:32.233│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2018/duran-guillermo-gonzalez-maximo-haider-maurer-andreas-lajovic-dusan-vsvmbKJr/
+150619 21:55:32.234│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:56:01.831│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:56:01.831│ Tournoi
+150619 21:56:01.831│     Annee
+150619 21:56:01.831│         Page
+150619 21:56:01.832│                 AH
+150619 21:56:01.832│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:56:01.832│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2018/delbonis-federico-pella-guido-carreno-busta-pablo-cuevas-pablo-r7lDwpYF/
+150619 21:56:01.833│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:56:20.518│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:56:20.518│ Tournoi
+150619 21:56:20.518│     Annee
+150619 21:56:20.518│         Page
+150619 21:56:20.519│                 AH
+150619 21:56:20.519│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:56:20.519│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2018/haider-maurer-andreas-lajovic-dusan-gonzalez-santiago-peralta-julio-hG8iUue2/
+150619 21:56:20.520│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:59:27.487│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:59:27.488│ Tournoi
+150619 21:59:27.488│     Annee
+150619 21:59:27.488│         Page
+150619 21:59:27.488│                 AH
+150619 21:59:27.488│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:59:27.489│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2017/cabal-juan-sebastian-farah-robert-olivo-renzo-pella-guido-vo6Yj9L4/
+150619 21:59:27.490│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:59:41.436│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 21:59:41.436│ Tournoi
+150619 21:59:41.436│     Annee
+150619 21:59:41.437│         Page
+150619 21:59:41.437│                 AH
+150619 21:59:41.437│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 21:59:41.437│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2017/lorenzi-paolo-robert-stephane-carreno-busta-pablo-cuevas-pablo-Cv2aLdEM/
+150619 21:59:41.438│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:00:02.965│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:00:02.965│ Tournoi
+150619 22:00:02.965│     Annee
+150619 22:00:02.965│         Page
+150619 22:00:02.965│                 AH
+150619 22:00:02.965│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 22:00:02.965│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2017/monroe-nicholas-sitak-artem-bolelli-simone-fognini-fabio-KpwM7wpN/
+150619 22:00:02.967│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:00:28.567│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:00:28.567│ Tournoi
+150619 22:00:28.567│     Annee
+150619 22:00:28.567│         Page
+150619 22:00:28.567│                 AH
+150619 22:00:28.567│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 22:00:28.567│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2017/andreozzi-guido-kicker-nicolas-bolelli-simone-fognini-fabio-WzTuMaub/
+150619 22:00:28.568│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:00:47.343│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:00:47.343│ Tournoi
+150619 22:00:47.344│     Annee
+150619 22:00:47.344│         Page
+150619 22:00:47.344│                 AH
+150619 22:00:47.344│                     org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table-main.detail-odds"}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.83', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55506}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 41a6d5976fd9ee55a8032987f05d1642
+*** Element info: {Using=css selector, value=table.table-main.detail-odds}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:253)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:870)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:821)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:586)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:509)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1121)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1115)
+
+150619 22:00:47.344│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-doubles-2017/daniell-marcus-demoliner-marcelo-gonzalez-santiago-marrero-santana-david-hjHlKwAA/
+150619 22:00:47.345│ └─── ──────────────────────────────────────────────────────────────────────────────────
+150619 22:24:41.389│ Je vais créer les drivers
+150619 22:24:46.198│ Création drivers réussies
+150619 22:25:02.789│ Je vais créer les drivers
+150619 22:25:07.229│ Création drivers réussies
+150619 22:39:13.337│ Je vais créer les drivers
+150619 22:39:17.865│ Création drivers réussies
+160619 10:34:42.405│ Je vais créer les drivers
+160619 10:34:46.971│ Création drivers réussies
+160619 10:36:14.045│ Erreur lors de la récupération du lien de tournoi ATP ITF Winnipeg Men
+160619 10:36:31.596│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 10:36:31.601│ java.lang.NullPointerException
+	at odds.portal.OddsPortal.fermerFichierExcel(OddsPortal.java:310)
+	at odds.portal.OddsPortal.quitter(OddsPortal.java:1180)
+	at odds.portal.OddsPortal.access$0(OddsPortal.java:1177)
+	at odds.portal.OddsPortal$1.run(OddsPortal.java:225)
+	at java.lang.Thread.run(Thread.java:745)
+
+160619 10:36:31.604│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 10:39:59.518│ Je vais créer les drivers
+160619 10:40:04.395│ Création drivers réussies
+160619 10:40:36.843│ Erreur lors de la récupération du lien de tournoi ATP ITF Esperance Women
+160619 10:40:39.580│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 10:40:39.580│ java.lang.NullPointerException
+	at odds.portal.OddsPortal.fermerFichierExcel(OddsPortal.java:310)
+	at odds.portal.OddsPortal.quitter(OddsPortal.java:1180)
+	at odds.portal.OddsPortal.access$0(OddsPortal.java:1177)
+	at odds.portal.OddsPortal$1.run(OddsPortal.java:225)
+	at java.lang.Thread.run(Thread.java:745)
+
+160619 10:40:39.581│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 10:42:42.995│ Je vais créer les drivers
+160619 10:42:47.773│ Création drivers réussies
+160619 11:52:13.718│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 11:52:13.718│ Tournoi
+160619 11:52:13.718│     Annee
+160619 11:52:13.718│         Page
+160619 11:52:13.718│                 AH
+160619 11:52:13.718│                     java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.lang.Float.parseFloat(Float.java:451)
+	at odds.portal.OddsPortal.prendreValeurReelle(OddsPortal.java:1024)
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:933)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 11:52:13.719│ https://www.oddsportal.com/tennis/australia/atp-australian-open/zverev-alexander-bolt-alex-CWwFlc1G/
+160619 11:52:13.719│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 11:53:04.585│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 11:53:04.589│ Tournoi
+160619 11:53:04.593│     Annee
+160619 11:53:04.596│         Page
+160619 11:53:04.599│                 AH
+160619 11:53:04.602│                     java.lang.NullPointerException
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:949)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 11:53:04.605│ https://www.oddsportal.com/tennis/australia/atp-australian-open/zverev-alexander-bolt-alex-CWwFlc1G/
+160619 11:53:04.608│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 12:05:27.305│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 12:05:27.305│ Tournoi
+160619 12:05:27.305│     Annee
+160619 12:05:27.305│         Page
+160619 12:05:27.309│                 AH
+160619 12:05:27.309│                     java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.lang.Float.parseFloat(Float.java:451)
+	at odds.portal.OddsPortal.prendreValeurReelle(OddsPortal.java:1024)
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:933)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 12:05:27.309│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 12:05:27.309│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:08:52.910│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:08:52.910│ Tournoi
+160619 14:08:52.910│     Annee
+160619 14:08:52.911│         Page
+160619 14:08:52.911│                 AH
+160619 14:08:52.911│                     java.lang.NullPointerException
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:949)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 14:08:52.911│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 14:08:52.911│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:08:57.981│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:08:57.981│ Tournoi
+160619 14:08:57.981│     Annee
+160619 14:08:57.981│         Page
+160619 14:08:57.981│                 AH
+160619 14:08:57.981│                     org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.140', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60523}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: ea6d5324dd238c07050b65b8d25df8f9
+*** Element info: {Using=css selector, value=#odds-data-table > div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:204)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementsByCssSelector(RemoteWebElement.java:257)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:177)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:774)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 14:08:57.981│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 14:08:57.981│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:21:50.423│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:21:50.423│ Tournoi
+160619 14:21:50.423│     Annee
+160619 14:21:50.423│         Page
+160619 14:21:50.423│                 AH
+160619 14:21:50.423│                     java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.lang.Float.parseFloat(Float.java:451)
+	at odds.portal.OddsPortal.prendreValeurReelle(OddsPortal.java:1024)
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:933)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 14:21:50.423│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 14:21:50.424│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:22:05.061│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:22:05.061│ Tournoi
+160619 14:22:05.061│     Annee
+160619 14:22:05.061│         Page
+160619 14:22:05.061│                 AH
+160619 14:22:05.061│                     java.lang.NullPointerException
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:949)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 14:22:05.062│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 14:22:05.062│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:34:33.015│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:34:33.015│ Tournoi
+160619 14:34:33.015│     Annee
+160619 14:34:33.015│         Page
+160619 14:34:33.015│                 AH
+160619 14:34:33.015│                     java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at sun.misc.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.lang.Float.parseFloat(Float.java:451)
+	at odds.portal.OddsPortal.prendreValeurReelle(OddsPortal.java:1024)
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:933)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 14:34:33.015│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 14:34:33.015│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:34:39.652│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:34:39.652│ Tournoi
+160619 14:34:39.652│     Annee
+160619 14:34:39.652│         Page
+160619 14:34:39.652│                 AH
+160619 14:34:39.652│                     java.lang.NullPointerException
+	at odds.portal.OddsPortal.ecrireCotes(OddsPortal.java:949)
+	at odds.portal.OddsPortal.gererAHOU(OddsPortal.java:879)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:833)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 14:34:39.652│ https://www.oddsportal.com/tennis/australia/atp-australian-open/kudla-denis-schwartzman-diego-sebastian-nsKWw3lg/
+160619 14:34:39.652│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:37:04.091│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:37:04.092│ Tournoi
+160619 14:37:04.092│     Annee
+160619 14:37:04.092│         Page
+160619 14:37:04.092│                 Commun
+160619 14:37:04.092│                     org.openqa.selenium.WebDriverException: java.io.InterruptedIOException: thread interrupted
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.140', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:682)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:577)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+Caused by: java.io.InterruptedIOException: thread interrupted
+	at okio.Timeout.throwIfReached(Timeout.java:145)
+	at okio.Okio$1.write(Okio.java:76)
+	at okio.AsyncTimeout$1.write(AsyncTimeout.java:180)
+	at okio.RealBufferedSink.flush(RealBufferedSink.java:224)
+	at okhttp3.internal.http1.Http1Codec.finishRequest(Http1Codec.java:166)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:84)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory$1$$Lambda$16/1272335935.intercept(Unknown Source)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	... 8 more
+
+160619 14:37:04.092│ https://www.oddsportal.com/tennis/australia/atp-australian-open/popyrin-alexei-zverev-mischa-WlhlO8oG/
+160619 14:37:04.092│ └─── ──────────────────────────────────────────────────────────────────────────────────
+160619 14:46:06.939│ Je vais créer les drivers
+160619 14:46:11.553│ Création drivers réussies
+160619 15:57:42.578│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+160619 15:57:42.579│ Tournoi
+160619 15:57:42.579│     Annee
+160619 15:57:42.579│         Page
+160619 15:57:42.579│                 HomeAway
+160619 15:57:42.579│                     org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AL', ip: '172.18.134.140', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Ouba\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51933}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: a4e8813a344f863ea9be5ce2c93d0a19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at odds.portal.OddsPortal.cliquerPuisAttendre(OddsPortal.java:1226)
+	at odds.portal.OddsPortal.traiterPageAnnee(OddsPortal.java:770)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:591)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:517)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1138)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1132)
+
+160619 15:57:42.579│ https://www.oddsportal.com/tennis/argentina/atp-buenos-aires-2018/bellucci-thomaz-cachin-pedro-zqlzJG1g/
+160619 15:57:42.580│ └─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:27:16.084│ Je vais créer les drivers
+190619 18:27:25.654│ Création drivers réussies
+190619 18:30:25.079│ Je vais créer les drivers
+190619 18:30:29.629│ Création drivers réussies
+190619 18:31:46.366│ Erreur lors de la récupération des liens de tous les tournois ATP
+190619 18:32:25.301│ Je vais créer les drivers
+190619 18:32:30.800│ Création drivers réussies
+190619 18:35:57.709│ Je vais créer les drivers
+190619 18:36:04.610│ Création drivers réussies
+190619 18:53:33.942│ Je vais créer les drivers
+190619 18:53:38.406│ Création drivers réussies
+190619 18:54:29.741│ Erreur lors de la récupération des liens de tous les tournois ATP
+190619 18:54:35.765│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:54:37.689│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:54:37.689│ java.lang.NullPointerException
+	at odds.portal.OddsPortal.fermerFichierExcel(OddsPortal.java:310)
+	at odds.portal.OddsPortal.quitter(OddsPortal.java:1184)
+	at odds.portal.OddsPortal.access$0(OddsPortal.java:1181)
+	at odds.portal.OddsPortal$1.run(OddsPortal.java:225)
+	at java.lang.Thread.run(Thread.java:745)
+
+190619 18:54:37.689│ └─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:54:41.781│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:54:41.786│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:54:41.787│ ┌─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:54:41.787│ java.lang.NullPointerException
+	at odds.portal.OddsPortal.fermerFichierExcel(OddsPortal.java:310)
+	at odds.portal.OddsPortal.traiterTournois(OddsPortal.java:603)
+	at odds.portal.OddsPortal.traiterSite(OddsPortal.java:521)
+	at odds.portal.OddsPortal.demarrer(OddsPortal.java:1142)
+	at odds.portal.OddsPortal.run(OddsPortal.java:1136)
+
+190619 18:54:41.787│ └─── ──────────────────────────────────────────────────────────────────────────────────
+190619 18:55:01.319│ Je vais créer les drivers
+190619 18:55:05.796│ Création drivers réussies
+190619 19:56:03.645│ Je vais créer les drivers
+190619 19:56:09.780│ Création drivers réussies
+250121 22:20:15.475? Je vais créer les drivers
+250121 22:33:08.865? Je vais créer les drivers
